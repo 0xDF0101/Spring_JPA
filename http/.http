@@ -1,0 +1,12 @@
+### DB insert
+POST localhost:8080/customers
+Content-Type: application/json
+
+{
+  "name": "Eugene",
+  "emailAddress": "email@email.com",
+  "password": "qwer"
+}
+
+### Get 확인
+GET localhost:8080/customers/1

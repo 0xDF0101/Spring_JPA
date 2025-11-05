@@ -17,7 +17,7 @@ public class OrderDetails {
     @Id
     @ManyToOne
 //    private Integer productId;
-    private Products products;
+    private Product product;
 
     private Integer quantity;
     @Column(name = "UnitCost", precision = 15, scale = 0)

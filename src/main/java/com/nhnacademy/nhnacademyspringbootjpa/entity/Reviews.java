@@ -11,11 +11,11 @@ public class Reviews {
 
 //    private Integer productId;
     @ManyToOne
-    private Products products;
+    private Product product;
 
 //    private Integer customerId;
     @ManyToOne
-    private Customers customers;
+    private Customer customer;
 
     private Integer rating;
     private Integer text;

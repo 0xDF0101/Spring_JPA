@@ -17,8 +17,8 @@ public class ShoppingCart {
 
 //    private Integer productId;
     @ManyToOne
-    private Products products;
-    
+    private Product product;
+
 
     @Column(name = "DateCreateed", updatable = false)
     private LocalDateTime dateCreated;

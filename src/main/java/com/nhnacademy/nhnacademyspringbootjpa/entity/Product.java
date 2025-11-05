@@ -22,7 +22,7 @@ CREATE TABLE Products (
 
 @Entity
 @Table(name = "Products")
-public class Products {
+public class Product {
 
 //    @Column(name = "ProductID");
     @GeneratedValue(strategy = GenerationType.IDENTITY)

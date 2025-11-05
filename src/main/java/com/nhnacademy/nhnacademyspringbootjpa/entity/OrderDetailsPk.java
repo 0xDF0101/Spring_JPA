@@ -11,15 +11,17 @@ import java.io.Serializable;
 @EqualsAndHashCode
 public class OrderDetailsPk implements Serializable {
 
-    private Integer orderId;
-    private Integer productId;
+//    private Integer orderId;
+//    private Integer productId;
+    private Orders orders;
+    private Product product;
 
-    public long getOrderId() {
-        return orderId;
+    public Orders getOrders() {
+        return orders;
     }
 
-    public int getProductId() {
-        return productId;
+    public Product getProduct() {
+        return product;
     }
 }
 
