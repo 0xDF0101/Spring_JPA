@@ -10,7 +10,11 @@ public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer orderId;
-    private Integer customerId;
+
+//    private Integer customerId;
+    @ManyToOne
+    private Customers customers;
+
     private LocalDateTime orderDate;
     private LocalDateTime dateTime;
 }

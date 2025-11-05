@@ -1,6 +1,5 @@
 package com.nhnacademy.nhnacademyspringbootjpa.entity;
 
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -23,3 +22,4 @@ public class OrderDetailsPk implements Serializable {
         return productId;
     }
 }
+

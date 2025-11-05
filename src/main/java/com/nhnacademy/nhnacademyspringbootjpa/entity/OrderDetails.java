@@ -10,9 +10,15 @@ import java.math.BigDecimal;
 public class OrderDetails {
 
     @Id
-    private Integer orderId;
+    @ManyToOne
+//    private Integer orderId;
+    private Orders orders;
+
     @Id
-    private Integer productId;
+    @ManyToOne
+//    private Integer productId;
+    private Products products;
+
     private Integer quantity;
     @Column(name = "UnitCost", precision = 15, scale = 0)
     private BigDecimal unitCost;

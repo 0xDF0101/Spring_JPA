@@ -11,10 +11,15 @@ public class ShoppingCart {
     @Id
     @GeneratedValue
     private Integer recordId;
-    @Length(min=0, max=150)
+    @Length(min=1, max=150)
     private String cardId;
     private Integer quantity;
-    private Integer productId;
+
+//    private Integer productId;
+    @ManyToOne
+    private Products products;
+    
+
     @Column(name = "DateCreateed", updatable = false)
     private LocalDateTime dateCreated;
 }

@@ -29,12 +29,15 @@ public class Products {
     @Id
     private Integer ProductId;
 
-    private Integer CategoryId;
-    @Length(min=0, max=10)
+//    private Integer CategoryId;
+    @ManyToOne
+    private Categories categories;
+
+    @Length(min=1, max=10)
     private String modelNumber;
-    @Length(min=0, max=120)
+    @Length(min=1, max=120)
     private String modelName;
-    @Length(min=0, max=30)
+    @Length(min=1, max=30)
     private String productImage;
     @Column(name = "UnitCost", precision = 15, scale = 0)
     private BigDecimal unitCost;

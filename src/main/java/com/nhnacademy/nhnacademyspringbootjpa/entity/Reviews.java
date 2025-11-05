@@ -8,8 +8,15 @@ public class Reviews {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer reviewId;
-    private Integer productId;
-    private Integer customerId;
+
+//    private Integer productId;
+    @ManyToOne
+    private Products products;
+
+//    private Integer customerId;
+    @ManyToOne
+    private Customers customers;
+
     private Integer rating;
     private Integer text;
 }
